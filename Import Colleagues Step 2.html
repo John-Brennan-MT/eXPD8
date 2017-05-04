@@ -22,8 +22,8 @@
                   </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbarColor01">
         <ul class="navbar-nav">
-          <li class="nav-item active"> <a class="nav-link active" href="#">Step 1: Upload file</a> </li>
-          <li class="nav-item bg-faded"> <a class="nav-link disabled" href="#">Step 2: Verify file</a> </li>
+          <li class="nav-item active bg-success"> <a class="nav-link disabled" href="#">Step 1: Upload file</a> </li>
+          <li class="nav-item"> <a class="nav-link active" href="#">Step 2: Verify file</a> </li>
           <li class="nav-item"> <a class="nav-link disabled" href="#">Step 3: confirmation</a> </li>
           <li class="nav-item">
             <a class="nav-link" href="#"></a>
@@ -36,17 +36,43 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">Example file</h1>
+          <h1 class="">Import Failed</h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="">To add new colleagues please download the CSV template and complete all details. You must specify either your unquie reference for each colleague or the Theia uneque number. This will be used to find if the colleague already exists and update
-            their detailes. If the references are not found, a new colleague will be imported. Files can be editing in excel, but must be saved as a CSV file using the CSV (Comma delimited) save option. </p>
+          <p class="">One or more issues have been found with your import<br><br>&gt; Incorrect file format<br>&gt; Missing column 'First name'<br>&gt; Unknown column 'Tom Gates'</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12"><a href="#" class="btn btn-primary">Download example file</a></div>
+        <div class="col-md-12">
+          <table class="table" style="opacity: 0.5;">
+            <thead>
+              <tr>
+                <th>Row</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Email address is not unique, possible duplicate</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Missing your unique reference number</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Missing email address</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><a href="#" class="btn btn-primary">Go Back</a></div>
       </div>
     </div>
   </div>
@@ -54,10 +80,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="pi-item">Upload file</h1>
-          <form>
-            <div class="form-group"><label>Colleague CSV import file</label><input type="file" class="form-control-file"></div>
-          </form><a href="#" class="btn btn-primary">Upload</a> </div>
+          <h1 class="">Upload Sucessful</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead" contenteditable="true">The following colleagues will be imported / updated</p>
+        </div>
       </div>
     </div>
   </div>
@@ -65,6 +94,9 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  <div id="gtx-trans" style="position: absolute; left: 279px; top: 917px;">
+    <div class="gtx-trans-icon"></div>
+  </div>
 </body>
 
 </html>
