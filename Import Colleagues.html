@@ -1,16 +1,70 @@
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.css" rel="stylesheet" type="text/css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.css" type="text/css"> </head>
 
-  <body>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-  </body>
-  
+<body>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-center">Import Colleagues</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-light bg-faded text-center">
+    <div class="container"> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbarColor01">
+        <ul class="navbar-nav">
+          <li class="nav-item active"> <a class="nav-link active" href="#">Step 1: Upload file</a> </li>
+          <li class="nav-item bg-faded"> <a class="nav-link disabled" href="#">Step 2: Verify file</a> </li>
+          <li class="nav-item"> <a class="nav-link disabled" href="#">Step 3: confirmation</a> </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="">Example file</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="">To add new colleagues please download the CSV template and complete all details. You must specify either your unquie reference for each colleague or the Theia uneque number. This will be used to find if the colleague already exists and update
+            their detailes. If the references are not found, a new colleague will be imported. Files can be editing in excel, but must be saved as a CSV file using the CSV (Comma delimited) save option. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><a href="#" class="btn btn-primary">Download example file</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-faded py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="pi-item">Upload file</h1>
+          <form>
+            <div class="form-group"><label>Colleague CSV import file</label><input type="file" class="form-control-file"></div>
+          </form><a href="#" class="btn btn-primary">Upload</a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5"></div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+</body>
+
 </html>
