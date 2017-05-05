@@ -11,68 +11,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-1 text-center">Import Colleagues</h1>
+          <h1 class="display-1 text-center">Issue Training</h1>
         </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-md navbar-light bg-faded text-center">
-    <div class="container"> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
-      <div class="collapse navbar-collapse text-center justify-content-center" id="navbarColor01">
-        <ul class="navbar-nav">
-          <li class="nav-item active bg-success"> <a class="nav-link disabled" href="#">Step 1: Upload file</a> </li>
-          <li class="nav-item"> <a class="nav-link active" href="#">Step 2: Verify file</a> </li>
-          <li class="nav-item"> <a class="nav-link disabled" href="#">Step 3: confirmation</a> </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="">Import Failed</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="">One or more issues have been found with your import<br><br>&gt; Incorrect file format<br>&gt; Missing column 'First name'<br>&gt; Unknown column 'Tom Gates'</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table" style="opacity: 0.5;">
-            <thead>
-              <tr>
-                <th>Row</th>
-                <th></th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Email address is not unique, possible duplicate</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Missing your unique reference number</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Missing email address</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12"><a href="#" class="btn btn-primary">Go Back</a></div>
       </div>
     </div>
   </div>
@@ -80,20 +20,33 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">File format OK</h1>
+          <h1 class="pi-item">Select training &amp; department</h1>
+          <p class="lead">First select the accreditation you would like colleague to achieve, and specify the department to be printed on their badge. </p>
+          <form>
+            <div class="form-group"><label>Accreditation type&nbsp;</label><select class="form-control"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+            <div class="form-group"><label>Department
+</label><select class="form-control"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-faded py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="">Select colleagues<br></h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <p class="lead">Please confirm the following colleagues will be imported / updated</p>
-        </div>
+        <div class="col-md-6"><a href="#" class="btn btn-primary">Select existing colleagues</a></div>
+        <div class="col-md-6"><a href="#" class="btn btn-primary">Import a list of colleagues</a></div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <table class="table">
             <thead>
               <tr>
-                <th>#</th>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Colleague reference number </th>
@@ -102,14 +55,12 @@
             </thead>
             <tbody>
               <tr>
-                <td>New</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>john@john.com</td>
                 <td>john@john.com</td>
               </tr>
               <tr>
-                <td>Updated</td>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>00003</td>
@@ -119,11 +70,48 @@
           </table>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12"><a href="#" class="btn btn-primary">Save &nbsp;Colleauges</a></div>
+        <div class="col-md-12">
+          <h1 class="">Tokens</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Accreditation </th>
+                <th>Available </th>
+                <th>Required </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ASDA Accreditation </td>
+                <td>20 </td>
+                <td>2 </td>
+                <td class="bg-success">Sufficient tokens </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8"><a href="#" class="btn btn-primary">Cancel</a></div>
+        <div class="col-md-4"><a href="#" class="btn btn-primary">Issue training</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5"></div>
   <div class="py-5"></div>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
